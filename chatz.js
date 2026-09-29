@@ -15,4 +15,4 @@ function handleUserInput(event) {
   chat.innerHTML +=`<p><strong>You:</strong> ${userInput}</p>`;
   const response = chatbotResponses[userInput.toLowerCase()]|| chatbotResponses["default"];
   chat.innerHTML +=  `<p><strong>Chiken:</strong> ${response}</p>;
-()
+}}
