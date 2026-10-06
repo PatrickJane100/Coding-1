@@ -2,7 +2,7 @@ const chatbotResponses = {
 "hello" : " Hi There",
 "how are you" : "I do not know because I am not human",
 "bye":"Fairwell",
-"defult": "No comprendo"
+"default": "No comprendo"
 
 };
 
@@ -14,5 +14,5 @@ function handleUserInput(event) {
   document.getElementById("userInput").value="";
   chat.innerHTML +=`<p><strong>You:</strong> ${userInput}</p>`;
   const response = chatbotResponses[userInput.toLowerCase()]|| chatbotResponses["default"];
-  chat.innerHTML +=  `<p><strong>Chiken:</strong> ${response}</p>{;
+  chat.innerHTML +=  `<p><strong>Chiken:</strong> ${response}</p>;
 }}
