@@ -16,7 +16,6 @@ img {
 border-radius: 12px;
 }
 
-/* LINKS */
 a,
 a {
 display: inline-block;
@@ -28,19 +27,14 @@ margin: 8px;
 border: 2px solid DeepPink;
 border-radius: 12px;
 box-shadow: 0 4px 8px Gray;
-transition: all 0.3s ease;
 }
 
-/* HOVER */
 a {
 background-color: LightPink;
 color: DeepPink;
-border-color: HotPink;
 text-decoration: underline;
-transform: translateY(-4px);
 }
 
-/* CLICK */
 a {
 background-color: DeepPink;
 color: White;
