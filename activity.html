@@ -4,60 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Games</title>
+    <title>My Amazing Website</title>
     <link rel="stylesheet" href="styles.css">
 
 <style>
     body {
         background-color: Cyan;
-        font-family: Arial, sans-serif;
         text-align: center;
         margin: 0;
         padding: 20px;
     }
 
-    h1 {
-        font-size: 55px;
-        color: HotPink;
-        text-shadow: 2px 2px White;
-        margin: 10px 0 25px;
-    }
-
     .game-container {
-        width: 95%;
-        max-width: 1400px;
-        margin: 0 auto 30px;
+        width: 100%;
+        max-width: 1600px;
+        margin: 20px auto;
         position: relative;
         height: 80vh;
         min-height: 500px;
     }
 
     .game-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        border: 4px solid HotPink;
-        border-radius: 15px;
-        background-color: White;
-    }
-
-    .navigation {
-        margin: 25px auto;
-    }
-
-    @media (max-width: 600px) {
-        h1 {
-            font-size: 38px;
-        }
-
-        .game-container {
-            width: 100%;
-            height: 65vh;
-            min-height: 400px;
-        }
-
-        body {
-            padding: 10px;
-        }
+        border: 3px solid HotPink;
+        border-radius: 12px;
     }
 </style>
 
@@ -65,25 +39,28 @@
 
 <body>
 
-<h1>🐔 L Like Chickens 🐔</h1>
+<h1>L Like Chikens</h1>
 
+<!-- iDev.Games Responsive Embed Code for Falling Cubes -->
 <div class="game-container">
-    <iframe
+    <iframe id="embededGame"
         src="https://idev.games/embed/falling-cubes"
-        title="Falling Cubes Game"
         scrolling="no"
+        seamless="seamless"
+        frameBorder="0"
         allowfullscreen>
-        Your browser does not support iframes.
+        Browser not compatible.
     </iframe>
 </div>
+<!-- End Embed Code -->
 
-<nav class="navigation">
+<div>
     <a href="index.html">Home</a>
     <a href="links.html">Links</a>
     <a href="randomWords.html">Random Words</a>
     <a href="chatbot.html">Chatbot</a>
     <a href="activity.html">Activity</a>
-</nav>
+</div>
 
 </body>
 </html>
