@@ -59,21 +59,31 @@ const words = [
 
 ];
 
+let previousWord = "";
+let wordsGenerated = 0;
+
 function generateRandomWord() {
 const wordDisplay = document.getElementById("wordDisplay");
+const counter = document.getElementById("wordCounter");
 
 if (!wordDisplay) {
     return;
 }
 
-let randomIndex;
 let randomWord;
 
 do {
-    randomIndex = Math.floor(Math.random() * words.length);
+    const randomIndex = Math.floor(Math.random() * words.length);
     randomWord = words[randomIndex];
-} while (words.length > 1 && randomWord === wordDisplay.innerText);
+} while (words.length > 1 && randomWord === previousWord);
 
-wordDisplay.innerText = randomWord;
+previousWord = randomWord;
+wordsGenerated++;
+
+wordDisplay.textContent = randomWord;
+
+if (counter) {
+    counter.textContent = "Words generated: " + wordsGenerated;
+}
 
 }
